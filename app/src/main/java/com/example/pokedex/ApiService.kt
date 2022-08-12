@@ -13,7 +13,7 @@ interface ApiService {
       fun getInstance():ApiService{
         if (apiService == null){
           apiService = Retrofit.Builder()
-            .baseUrl("https://raw.githubusercontent.com/Biuni/PokemonGo-Pokedex/master")
+            .baseUrl("https://raw.githubusercontent.com/Biuni/PokemonGo-Pokedex/master/")
             .addConverterFactory(GsonConverterFactory.create()).
             build().create(ApiService::class.java)
         }
